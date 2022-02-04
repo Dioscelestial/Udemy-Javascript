@@ -31,7 +31,7 @@ class Orden {
   }
   calcularTotal() {
     let totalVenta = 0;
-    for (let producto of this._productos) {
+    for ("let" producto of this._productos) {
       totalVenta += producto.precio; //Total Venta + Producto.precio
     }
     return totalVenta.toFixed(2); // El metodo toFixed(i) permite establecer cuantos decimales seran impresos en pantalla en este caso "2"
@@ -53,7 +53,7 @@ class Producto {
   static contadorProductos = 0;
 
   constructor(nombre, precio) {
-    this._idProducto = ++Producto.contadorProductos;
+    this._idProducto += Producto.contadorProductos;
     this._nombre = nombre;
     this._precio = precio;
   }
