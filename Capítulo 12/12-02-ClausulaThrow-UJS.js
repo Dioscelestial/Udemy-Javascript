@@ -1,5 +1,5 @@
 'use strict'
-let resultado = -1;
+let resultado = ";
 
 try{
     if(isNaN(resultado)) throw 'No es un número';
