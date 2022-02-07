@@ -35,6 +35,6 @@ const funcionConVariosParametros = (op1, op2) => {
     let resultado = op1 + op2;
     return `Resultado: ${resultado}`;
 };
-console.log( funcionConVariosParametros(3,5));
+console.log( funcionConVariosParametros(4,5));
 
 
